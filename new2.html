@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="new2.css" rel="stylesheet">
+    <title>food</title>
+</head>
+
+<body>
+    <div class="page-header">
+        <h1>my food</h1>
+        <div id="filter" class="form-group">
+            <span class="control-label">Filter Categories</span>
+            <select class="form-control" id="cmbCategories" onchange="catalogBinder()">
+                <option>All</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div id="basket" class="col-md-3">
+            <div id="total">
+                <div id="toti">total: </div>
+                <div id="totalCash"></div>
+            </div>
+        </div>
+        <div id="catalog" class="col-md-9">
+            <div id="show">
+                <div id="showCatalog"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+    <script src="new2.js"></script>
+</html>

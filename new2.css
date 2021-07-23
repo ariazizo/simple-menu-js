@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 80%;
+    margin: 30px auto;
+}
+
+h1{
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+#filter{
+    margin-bottom: 10px;
+}
+/* *****************catalog ************** */
+#catalog{
+    height: 600px;
+}
+#showCatalog{
+    display: flex;
+    flex-wrap: wrap;
+}
+.alert-danger{
+    padding: 10px;
+    font-family: sans-serif;
+}
+#showCatalog{
+    display: flex;
+    justify-content: space-between;
+}
+#catalog .box{
+    border: 1px solid rgb(165, 165, 165);
+    height: 230px;
+    width: 24%;
+    margin-top: 3px;
+}
+#catalog .box img{
+    height: 100px;
+    width: auto;
+    margin: 5px auto;
+    display: block;
+    width: 130px;
+}
+#catalog .box h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    color: red;
+    text-align: center;
+    margin: 5px auto;
+}
+#catalog .box h5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px auto;
+}
+#catalog .box button{
+    display: block;
+    width: 70%;
+    margin: 5px auto;
+}
+#catalog .box:hover{
+    border: 1px solid rgb(92, 91, 91);
+}
+/* *****************end catalog ************** */
+/* ***************** basket  ************** */
+#basket{
+    border: 2px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    height: 600px;
+    position: relative;
+}
+.cashContainer{
+    width: 90%;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.cashType{
+    width: 30%;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+}
+.cashPrice{
+    width: 20%;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+}
+.cashContainer input{
+    width: 30%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.cashDelete{
+    margin-left: 5px;
+    color: red;
+    width: 10%;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+}
+.cashDelete:hover{
+    cursor: pointer;
+}
+/* *****************end of basket ************** */
+#total{
+    width: 80%;
+    height: 40px;
+    border: 1px dashed pink;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50% , 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#totalCash{
+    color: red;
+}
